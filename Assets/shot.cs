@@ -193,34 +193,34 @@ public class shot : MonoBehaviour
     void OnGUI()
     {
         GUI.skin.label.fontSize = GUI.skin.box.fontSize = GUI.skin.button.fontSize = 20;
-        if (GUI.Button(new Rect(100, 200, 120, 50), "double")&&buttons_enable[0])
+        if (GUI.Button(new Rect((Screen.width/2)-60, (Screen.height/2)+200, 120, 50), "double")&&buttons_enable[0])
         {
             double_bullet(character1);
             double_bullet(character2);
             check_special_power_count();
             buttons_enable[0] = false;
         }
-        if (GUI.Button(new Rect(100, 250, 120, 50), "cross")&&buttons_enable[1])
+        if (GUI.Button(new Rect((Screen.width/2)-60, (Screen.height/2)+250, 120, 50), "cross")&&buttons_enable[1])
         {
             cross_bullet(character1);
             cross_bullet(character2);
             check_special_power_count();
             buttons_enable[1] = false;
         }
-        if (GUI.Button(new Rect(100, 300, 120, 50), "faster")&&buttons_enable[2])
+        if (GUI.Button(new Rect((Screen.width/2)-60, (Screen.height/2)+300, 120, 50), "faster")&&buttons_enable[2])
         {
             faster_bullet();
             check_special_power_count();
             buttons_enable[2] = false;
         }
-        if (GUI.Button(new Rect(100, 350, 120, 50), "consecutive")&&buttons_enable[3])
+        if (GUI.Button(new Rect((Screen.width/2)-60, (Screen.height/2)+350, 120, 50), "consecutive")&&buttons_enable[3])
         {
             more_consecutive(character1);
             more_consecutive(character2);
             check_special_power_count();
             buttons_enable[3] = false;
         }
-        if (GUI.Button(new Rect(100, 400, 120, 50), "second character")&&buttons_enable[4])
+        if (GUI.Button(new Rect((Screen.width/2)-60, (Screen.height/2)+400, 120, 50), "second character")&&buttons_enable[4])
         {
             character2.enable_character = true;
             character2.character_obj.SetActive(true);
